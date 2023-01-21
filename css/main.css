@@ -1,0 +1,893 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+img{
+    width: 100%;
+
+}
+.clr{
+    clear: both;
+}
+ .home .meme{
+    height: 100px;
+    width: 51px;
+    background-color: gray ;
+}
+.meme{
+    height: 20vh;
+}
+.meme2{
+    height: 15vh;
+}
+/* sec index */
+.pos {
+    width: 60px;
+    padding: 15px;
+    background-color: #fff;
+    position: relative;
+    right: 13px;
+    position: fixed;
+    top: 200px;
+    border-radius: 7px;
+   text-align: center;
+    z-index: 10000;
+}
+.pos .icon1 i,
+.pos .icon2 i,
+.pos .icon3 i,
+.pos .icon4 i,
+.pos .icon5 i,
+.pos .icon6 i{
+    font-size: 23px;
+    color: gray;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+.pos .icon1 ,
+.pos .icon2 ,
+.pos .icon3 ,
+.pos .icon4 ,
+.pos .icon5 ,
+.pos .icon6 {
+    position: relative;
+
+}
+.pos .icon1 i:hover,
+.pos .icon2 i:hover,
+.pos .icon3 i:hover,
+.pos .icon4 i:hover,
+.pos .icon5 i:hover,
+.pos .icon6 i:hover{
+
+    color: #294cff;
+}
+.showcase::before{
+    content: "Showcase";
+    position: absolute;
+    right: 44px;
+    top: -12px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translatex(10px);
+    transition: all 0.4s;
+}
+.pos .icon1:hover.showcase::before{
+    opacity: 1;
+    visibility: visible;
+    transform: translatey(0px);
+}
+.pos .icon2 .bag{
+    position: absolute;
+    right: 44px;
+    top: -16px;
+    background-color: #f4f4f4;
+    width: 20vh;
+    padding: 23px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    opacity: 0;
+    visibility: hidden; 
+    transform: translatex(10px);
+    transition: all 0.4s
+
+}
+.pos .icon3 .glass{
+    position: absolute;
+    right: 44px;
+    top: -17px;
+    width: 23vh;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    opacity: 0;
+    visibility: hidden; 
+    transform: translatex(10px);
+    transition: all 0.4s
+
+}
+.pos .icon4 .question{
+    position: absolute;
+    right: 44px;
+    top: -15px;
+    padding: 22px;
+    width: 27vh;
+    background-color: #f4f4f4;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    opacity: 0;
+    visibility: hidden; 
+    transform: translatex(10px);
+    transition: all 0.4s
+
+}
+.pos .icon5 .support{
+    position: absolute;
+    right: 44px;
+    top: -15px;
+    padding: 18px;
+    width: 22vh;
+    background-color: #f4f4f4;
+     border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    opacity: 0;
+    visibility: hidden; 
+    transform: translatex(10px);
+    transition: all 0.4s
+
+}
+.pos .icon6 .emailn{
+    position: absolute;
+    right: 42px;
+    top: -15px;
+    padding: 18px;
+    width: 28vh;
+    background-color: #f4f4f4;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    opacity: 0;
+    visibility: hidden; 
+    transform: translatex(10px);
+    transition: all 0.4s
+}
+.pos .icon2:hover .bag,
+.pos .icon3:hover .glass,
+.pos .icon4:hover .question,
+.pos .icon5:hover .support,
+.pos .icon6:hover .emailn{
+
+    opacity: 1;
+    visibility: visible;
+    transform: translatex(0px); 
+
+
+}
+
+
+.header{
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.nav-item {
+    position: relative;
+    margin-top: 20px;
+  }
+ .hot::before {
+    position: absolute;
+    content:"jevelin";
+    font-weight: bold;
+    color:#000; 
+    text-align: center;
+    border-radius: 8px;
+    font-size: 35px;
+    top: -15px;
+    right: -15px;
+    transition: all 0.2s;
+    letter-spacing: -1px;
+
+    
+    
+  }
+  .nav-item .nav-link{
+      margin-top: 35px;
+      color: #000  ;
+      font-weight: bold;
+      margin-right: 15px;
+     
+  }
+  .men::before{
+      position: absolute; 
+      content: "0";
+      top: 40px;
+      left: 22px;
+      font-size: 10px;
+      font-weight: bold;
+      border: 1px solid red;
+      background-color: red;
+      padding-right: 5px;
+      padding-left: 5px;
+      border-radius: 40%;
+      color: #fff;
+  }
+  .header .navbar-nav .nav-item .no{
+      color: gray;
+      background-color: #515151;
+      padding: 25px;
+      width: 40vh;
+      position: absolute;
+      right: -5px;
+      opacity: 0;
+      visibility: hidden; 
+      transform: translatey(10px);
+      transition: all 0.4s
+  }
+  .header .navbar-nav .nav-item:hover .no{
+    opacity: 1;
+    visibility: visible;
+    transform: translatex(0px); 
+
+  }
+
+
+
+
+
+
+  /* end sec 1 */
+  .home{
+      background-image: url(../img/Ellipse-708.jpg);
+      background-position: center;
+      height: 130vh;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+     
+      
+  }
+  .home .home-text .text-1{
+      position: relative;
+  }
+  .home .home-text .text-1 .img {
+      position: absolute;
+      top: -79px;
+      left: -56px;
+      /* background-color: black; */
+      z-index: 1;
+  }
+  .home .home-text{
+      text-align: center;
+      color: #fff;
+      flex-wrap: wrap;
+     
+  }
+  .home .home-text .text-1 h2{
+    color: red;
+    font-weight: bold;
+    font-size: 65px;
+    z-index: 2;
+    position: absolute;
+    top: -121px;
+    left: 108px;
+    
+
+
+  }
+  .home .home-text .text-1 span{
+      color: gray;
+  }
+  .home .home-text .text-1 h1{
+    font-weight: bold;
+    font-size: 167px;
+    letter-spacing: 10px;
+    position: relative;
+    bottom: 81px;
+    z-index: 2;
+   
+    
+
+  }
+  
+  .home .resha .resha-1{
+     position: relative;
+      bottom: 177px;
+      left: 120px;
+      z-index: 5; 
+      margin-left: 50px;
+      margin-bottom: 50px;
+  }
+  .home .resha .resha-1 .img1{
+    position: inherit;
+    right: 10px;
+    bottom: -41px;
+  }
+  .home .resha .resha-1 .img2{
+    position: inherit;
+    right: 12px;
+    bottom: -35px;
+     
+  }
+  
+  .home .resha .resha-1 .img3{
+      position: relative;
+      bottom: -2px;
+      
+  }
+  .home .img-borger img{
+      background-color: transparent;
+      text-align: center;
+      z-index: 2;
+
+
+  } 
+  
+  .home .btn1{
+      position: relative;
+      text-align: center;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+     
+      
+  }
+  .home .btn1 button{
+      background-color:red;
+      text-align: center;
+      border: none;
+      padding: 20px 55px;
+     border-radius: 40px;
+     font-weight: bold;
+     color: #fff;
+     position: absolute;
+     right: 297px;
+     top: 183px;
+     transition: all 0.5s;
+     z-index: 2;
+  }
+  .home .btn1 button:hover{
+      background-color: transparent;
+      border: 2px solid #fff;
+  }
+  /* end sec 2 */
+  /*  sec 3 */
+.about .card{
+    margin-top:30px ;
+    margin-left: 40px;
+    padding-left: 20px;
+    padding-right: 40px;
+    margin-right: 30px;
+    border: none;
+   
+}
+.about .card img{
+    border-radius: 4%;
+}
+.about .card .card-body{
+    position: relative;
+    top: 30%;
+   
+}
+.about-us::before{
+    content: "ABOUT US";
+    background-color: #000;
+    position: absolute;
+    top: -20PX;
+    padding: 5px;
+    font-weight: bold;
+    color: #fff;
+
+    font-size: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.about .card .card-body h2{
+    font-weight: bold;
+    font-size: 60px;
+}
+.about .card .card-body .card-text{
+    margin-top: 50px;
+    letter-spacing: 1px;
+    line-height: 2;
+    color: gray;
+    font-weight: 400;
+}
+.about .card .card-body .text-muted{
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+  
+}
+/* end sec 3 */
+/*  sec 4 */
+.new::before{
+    content: "NEW IN TOWN";
+    background-color: red;
+    width: 15vh;
+    border-radius:15px;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    font-size: 10px;
+    margin-top: 60px;
+}
+.card1{
+
+    
+    margin-top: 55px;
+}
+.offers .card{
+    border: none;
+}
+
+.offers h1{
+    font-weight: bold;
+    font-size: 55px;
+    margin-bottom: 50px;
+}
+
+.offers .card img{
+    padding: 50px;
+    margin-top: 40px;
+}
+.offers .card .card-body h4{
+    font-weight: bold;
+    font-size: 40px;
+}
+.offers .card .card-body p .b1,
+.offers .card .card-body p .b2,
+.offers .card .card-body p .b3
+{
+    /* background-color: red; */
+    border: 1px solid #f4f4f4;
+    line-height: 32px;
+    padding: 6px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 14px;
+    border-radius: 18px;
+    background-color: rgba(255,255,255,0.01);
+    color: #7b7b7b;
+    font-weight: bold;
+    
+    
+}
+.offers .card .card-body p .b2,
+.offers .card .card-body p .b3{
+    margin-left: 12px;
+}
+.offers .card .card-body .card-text1{
+    letter-spacing: 1px;
+    line-height: 2;
+    color: #515050;
+    font-weight: 400;
+}
+.offers .card .card-body p .dolar{
+    font-weight: bold;
+    font-size: 40px;
+
+}
+.offers .card .card-body p .zeze{
+position: absolute;
+right: 35px;
+margin-top: 15px;
+
+
+
+}
+.offers .card .card-body p .zeze button{
+    border: none;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 40px;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+.offers .card .card-body p .zeze button span{
+    /* color: ; */
+    /* background-color:#000; */
+    border-radius: 50%;
+    border-color: #fff;
+    margin-right: 10px;
+}
+.offers .card .card-body p .zeze button:hover{
+    background-color: red;
+}
+.offers .card2 .card{
+    text-align: center;
+}
+.offers .card2 .card .card-body{
+    position: relative;
+    top: -50px;
+}
+.offers .card2 .card .card-body .card-title{
+    font-weight: bold;
+    
+}
+.offers .card2 .card .card-body .card-text button{
+    background-color: #ff3939;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    /* widh: 10vh; */
+    text-align: center;
+    border: none;
+    padding: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 40px;
+    margin-bottom: 30px;
+    margin-TOP: 10px;
+}
+.offers .card2 .card .card-body .btn{
+    border: none;
+    font-weight: bold;
+    box-shadow: none;
+}
+.offers .card2 .card .card-body .btn:hover{
+    color: red;
+    box-shadow: none;
+}
+.offers .card2 .card{
+    border: none;
+    background-color: #fbf8f6;
+    border-radius: 30px;
+}
+/* end sec 4 */
+/*   sec 5 */
+.off::before{
+    content:" -25% off";
+    background-color: #ff3939;
+   padding: 5px;
+   padding-left: 15px;
+   padding-right: 15px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 15px;
+    margin-bottom: 15px;
+
+}
+.menu{
+    background-color: black;
+   
+}
+.menu .card1 .card{
+    background-color: black;
+    margin-top: 60px;
+    padding-top: 30px;
+    border: none;
+   
+}
+.menu .card1 .card img{
+    /* padding: 10px; */
+    background-color: #000;
+    color: #000;
+}
+.menu .card1 .card .card-title{
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 60px;
+    color: #fff;
+}
+.menu .card1 .card .card-text{
+    color: #fff;
+    font-weight: bold;
+    font-size: 17px;
+    margin-top: 55px;
+
+}
+.menu .card1 .card .card-body{
+    position: relative;
+    top: 10%;
+    right: 22px;
+   
+   
+}
+.menu .card1 .card .btn button{
+    border:2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    padding: 13px;
+    padding-left: 45px;
+    padding-right: 45px;
+    border-radius: 40px;
+    font-weight: bold;
+    transition: all .5s;
+    margin-top: 15px;
+    
+
+}
+.menu .card1 .card .btn button:hover{
+    background-color: #ff3939;
+    border: none;
+}
+
+
+.on::before{
+    content:" -15% off";
+    background-color: #ff3939;
+   padding: 5px;
+   padding-left: 15px;
+   padding-right: 15px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 15px;
+    margin-bottom: 15px;
+
+}
+
+
+.menu{
+    background-color: black;
+   
+}
+.menu .card1 .card2{
+    background-color: black ;
+    margin-top: 60px;
+    padding-top: 30px;
+    border: none;
+    margin-bottom: 60px;
+    
+   
+}
+.menu .card1 .card2 img{
+    /* padding: 10px; */
+    background-color: #000;
+    color: #000;
+    position: relative;
+    right: -210px;
+  
+}
+.menu .card1 .card2 .card-title{
+     margin-top: 20px; 
+     font-weight: bold;
+    font-size: 60px;
+    color: #fff; 
+}
+.menu .card1 .card2 .card-text{
+    color: #fff;
+    font-weight: bold;
+    font-size: 17px;
+    margin-top: 55px;
+
+}
+.menu .card1 .card2 .card-body{
+    position: relative;
+    top: 13%;
+    left: 35%;
+    
+   
+   
+}
+.menu .card1 .card2 .btn button{
+    border:2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    padding: 13px;
+    padding-left: 45px;
+    padding-right: 45px;
+    border-radius: 40px;
+    font-weight: bold;
+    transition: all .5s; 
+    margin-top: 15px;
+    
+
+}
+.menu .card1 .card2 .btn button:hover{
+    background-color: #ff3939;
+    border: none;
+} 
+ /* end sec 5 */
+ /*  sec 6 */ 
+ .trend{
+     padding: 30px;
+     margin-right: 50px;
+     margin-left: 50px;
+ }
+ .trend .card{
+     border: none;
+     background-color: #fbf8f6;
+     border-radius: 30px
+     ;
+ }
+ .trend h1{
+     font-weight: bold;
+     font-size: 60px;
+     margin-bottom: 30px;
+     color: #212529;
+ }
+ .trend .card img{
+     padding: 20px;
+ }
+ .trend .card .card-body .card-title{
+     font-weight: bold;
+     font-size: 30px;
+ }
+ .trend .card .card-body .card-text{
+     color:#515050;
+     line-height: 2;
+ }
+ .trend .card .card-body .card-text .b1{
+    background-color: #ff3939;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    padding: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 40px;
+    margin-bottom: 30px;
+    margin-TOP: 10px;
+ }
+ .trend .card .card-body{
+     position: relative;
+ }
+ .trend .card .card-body  .card-text span button{
+     position: absolute;
+     right: 2px;
+     font-weight: bold;
+
+ }
+ .trend .card .card-body  .card-text span button:hover{
+     color: #ff3939;
+ }
+ /* end sec 6 */
+ /* sec 8  */
+ .show .card{
+    margin-top:30px ;
+    margin-left: 40px;
+    padding-left: 20px;
+    padding-right: 40px;
+    margin-right: 30px;
+    border: none;
+   
+}
+.show .card img{
+    border-radius: 4%;
+}
+.show .card .card-body{
+    position: relative;
+    top: 30%;
+   
+}
+.about-us::before{
+    content: "TESTIMONIALS";
+    background-color: #000;
+    position: absolute;
+    top: -20PX;
+    padding: 7px;
+    font-weight: bold;
+    color: #fff;
+
+    font-size: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.show .card .card-body h2{
+    font-weight: bold;
+    font-size: 60px;
+}
+.show .card .card-body .card-text{
+    margin-top: 10px;
+    letter-spacing: 1px;
+    line-height: 2;
+    color: gray;
+    font-weight: 400;
+}
+.show .card .card-body .text-mum{
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    color: #000;
+  
+}
+.show .card .card-body .aaa{
+    color:#ff3939;
+    font-size: 60px;
+}
+/* end sec 8 */
+/* sec 9 */
+
+.jave .row .jave2{
+    
+    display: inline-block;
+    width: 24.5px;
+}
+/* end sec 9 */
+/*  sec 10 */
+.contact .card{
+    border: none;
+}
+.contact .card .card-body img{
+    width: 17vh;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.contact .card .card-body .card-text{
+    font-size: 17px;
+    margin-top: 10px;
+}
+.contact .card .card-body .icon i{
+    margin-left: 10px;
+    font-size: 20px;
+}
+.contact .card .card-body h5{
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.contact .card .card-body .icons{
+    margin-top: 10px;
+    line-height: 2;
+    font-size: 20px;
+}
+.contact .card .card-body .icons span{
+    color: #515050;
+}
+.contact .card .card-body .icons i{
+    color: #ff3939;
+}
+.contact .card .card-body1{
+    text-align: center;
+}
+.contact .card .card-body1 h4{
+    font-weight: bold;
+    font-size: 26px;
+}
+.contact .card .card-body1 .input input{
+    text-align: center;
+    padding: 20px;
+    width: 50vh;
+    background-color: #f4f4f4;
+    border: none;
+    border-radius: 40px;
+    outline: none;
+    transition: all 1s;
+    overflow: hidden;
+
+}
+.contact .card .card-body1 .input input:hover{
+    transform: scale(1.1);
+}
+.contact .card .card-body1 .btn button{
+    border: none;
+    width:50vh ;
+    padding: 17px;
+    border-radius: 40px;
+    background-color: red;
+    color: #fff;
+    transition: all .5s;
+    font-weight: bold;
+    font-size: 20px;
+}
+.contact .card .card-body1 .btn button:hover{
+    background-color: #000;
+}
+.contact .card .card-body1 .get{
+    margin-top: 15px;
+    color: gray;
+}
+/* end sec 10 */
+/* sec 11 */
+.iframe iframe{
+    width: 100%;
+    height: 70vh;
+}
